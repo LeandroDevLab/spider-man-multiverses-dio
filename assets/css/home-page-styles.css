@@ -26,7 +26,7 @@ body::before {
 }
 
 .s-menu__item {
-  display: inline-block;
+  display: inline-block; /* ficar lado a lado */
   text-transform: uppercase;
   margin: 0 1.25rem;
 }
@@ -42,14 +42,15 @@ body::before {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  perspective: 3000px;
+  perspective: 3000px; /* aplicando a perspective no pai para aplicar aos filhos */
 }
 
 .s-card {
   border: 0.5rem solid white;
+/*   width: calc(100% / 3 - 8%);*/  
   width: 100%;
   height: 70vh;
-  position: absolute;
+  position: absolute; /* aqui tava relative na aula */
   transition: filter .5s ease-in-out;
 }
 
@@ -71,7 +72,7 @@ body::before {
   object-fit: cover;
   position: absolute;
   opacity: 1;
-  transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out; /* essa transição somente na opacity */
 }
 
 .s-card__image {
@@ -79,7 +80,7 @@ body::before {
   height: 100%;
   object-fit: contain;
   position: relative;
-  transition: 1s ease-in-out;
+  transition: 1s ease-in-out; /* essa transição lenta de 1s para tudo que estimer dentro da class .s-card__image */
 }
 
 .s-card__title {
@@ -93,7 +94,7 @@ body::before {
 }
 
 .s-controller {
-  position: absolute;
+  position: absolute; /* relative no exemplo */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -119,6 +120,7 @@ body::before {
   transition: transform 0.3s ease-in-out;
 }
 
+/* aumentando a escala quando passar o mouse por cima */
 .s-controller__button:hover {
   transform: scale(1.1);
 }
@@ -165,10 +167,16 @@ body#spider-man-03-hovered::before {
   background-image: url('../images/pic-sm-bg-03.jpg');
 }
 
-body[id^="spider-man-"]::before {
+body[id^="spider-man-"]::before { /* seletor por atributo, ^= começando com esse ID */
   opacity: 1;
 }
 
+/* no body nos elementos com começando com ID "spider-man-" 
+e com classe s-card que não tenham a classe .s-card--hovered
+,ou seja, as que não estão com o mouse em cima (de acordo com o que
+a função faz, adiciona o s-card--hovered com mouse em cima(entrada do mouse)
+
+.s-card.s-card:not(.s-card--hovered) significa esse final*/
 body[id^="spider-man-"] .s-card:not(.s-card--hovered) {
   filter: grayscale(100%);
 }
@@ -181,6 +189,6 @@ body[id^="spider-man-"] .s-card:not(.s-card--hovered) {
   display: flex;
   justify-content: center;
   width: calc(100vw / 3 - 10%);
-  transform-style: preserve-3d;
+  transform-style: preserve-3d; /* preservar o estilo em 3D */
   transition: transform 0.4s ease-in;
 }

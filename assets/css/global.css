@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
-:root {
+:root { /* colocar algumas variáveis no CSS */
   --primary-color: #B9001F;
 }
 

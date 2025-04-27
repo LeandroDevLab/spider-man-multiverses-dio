@@ -1,8 +1,10 @@
+//Função de quando o mouse entrar adicionar uma class no elemento(this)
 function handleMouseEnter() {
   this.classList.add('s-card--hovered');
   document.body.id = `${this.id}-hovered`;
 }
 
+//Função para remover quando o mouse sai no elemento(this)
 function handleMouseLeave() {
   this.classList.remove('s-card--hovered');
   document.body.id = '';
@@ -13,8 +15,8 @@ function addEventListenersToCards() {
   
   for (let index = 0; index < cardElements.length; index++) {
     const card = cardElements[index];
-    card.addEventListener('mouseenter', handleMouseEnter);
-    card.addEventListener('mouseleave', handleMouseLeave);
+    card.addEventListener('mouseenter', handleMouseEnter); //escuta quando o mouse entra
+    card.addEventListener('mouseleave', handleMouseLeave); //escuta quando o mouse sai
   }
 }
 
