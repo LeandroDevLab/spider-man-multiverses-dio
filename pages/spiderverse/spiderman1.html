@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spider Man | Multiverso</title>
+  <link href="../../assets/css/internal.css" rel="stylesheet" type="text/css" />
+  <!-- Adicionando o link do CDN do Fancybox -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+</head>
+
+<body>
+  <div class="s-wrapper">
+    <video autoplay loop muted>
+      <source src="../../assets/videos/spider-verse-2018-trailer.mp4" type="video/mp4" />
+    </video>
+    <!-- tinha adicionado fundo de Imagem, mas mudei de ideia e coloquei o vídeo
+    <img class="bg-spider-verse" src="../../assets/images/spider-verse/image-04.jpg" alt=""> -->
+
+    <!--  Coluna da esquerda com menu (Left Column with menu)  -->
+    <div class="s-left-column">
+      <nav class="navigator">
+        <div class="navigator__icon">
+          <a href="../../index.html">
+            <img id="spider-verse-icon" src="../../assets/images/icons/aranha1.png" width="100px" height="100px" />
+          </a>
+        </div>
+        <ul>
+          <li><a href="#01" class="active">01</a></li>
+          <li><a href="spiderman2.html">02</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- FIM - Coluna da esquerda com menu (Left Column with menu)  -->
+
+    <div class="s-main-content">
+      <div class="s-main-content__top">
+        <div class="s-logo">
+          <img src="../../assets/images/spider-verse/spider-verse-logo-01.png" alt="Spiderman (2002)"
+            title="Spiderman (2002)"  width="600px" height="200px"/>
+        </div>
+
+        <div class="s-description">
+          <div class="pills">
+            <ul>
+              <li>Ano: 2002</li>
+              <li>Diretor: Sam Raimi</li>
+            </ul>
+          </div>
+          <div class="s-description__text">
+            <p><strong>Sinopse:</strong>&nbsp;Depois de ser picado por uma aranha geneticamente modificada em uma
+              demonstração científica, o jovem nerd Peter Parker ganha superpoderes. Inicialmente, ele pretende usá-los
+              para para ganhar dinheiro, adotando o nome de Homem-Aranha e se apresentando em lutas de exibição. Porém,
+              ao presenciar o assassinando de seu tio Ben e sentir-se culpado, Peter decide não mais usar seus poderes
+              para proveito próprio e sim para enfrentar o mal, tendo como seu primeiro grande desafio o psicótico
+              Duende Verde.</p>
+          </div>
+        </div>
+
+        <div class="s-links">
+          <ul>
+            <li>
+              <a href="https://www.youtube.com/watch?v=AIo0NFdc57Q" class="link-button" target="_blank">
+                <span class="icon">
+                  <div class="play-icon">&nbsp;</div>
+                </span>
+                <span class="label">
+                  Assistir trailer
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="s-main-content__bottom">
+        <div class="gallery">
+          <ul>
+            <li>
+              <a data-fancybox href="../../assets/images/spider-verse/logo.jpeg" >
+                <img width="392px" height="225px" src="../../assets/images/spider-verse/logo.jpeg" alt="">
+              </a>
+            </li>
+            <li>
+              <a data-fancybox href="../../assets/images/spider-verse/background-multiverso.jpg" >
+                <img width="392px" height="225px" src="../../assets/images/spider-verse/background-multiverso.jpg" alt="">
+              </a>
+            </li>
+            <li>
+              <a data-fancybox href="../../assets/images/spider-verse/image-03.jpg" >
+                <img width="392px" height="225px" src="../../assets/images/spider-verse/image-03.jpg" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script>
+    Fancybox.bind("[data-fancybox]", {
+    // Your custom options
+    });
+  </script>
+</body>
+</html>

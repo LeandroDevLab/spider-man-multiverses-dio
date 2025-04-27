@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spider Man | Multiverso</title>
+  <link href="../../assets/css/internal.css" rel="stylesheet" type="text/css" />
+  <!-- Adicionando o link do CDN do Fancybox -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+</head>
+
+<body>
+  <div class="s-wrapper">
+    <video autoplay loop muted>
+      <source src="../../assets/videos/spider-verse-2023-trailer.mp4" type="video/mp4" />
+    </video>
+
+    <!--     tinha adicionado imagem, mas desisti e voltei ao fundo de vídeo
+    <img class="bg-spider-verse" src="../../assets/images/spider-verse/logo-2.jpg" alt=""> -->
+
+    <!--  Coluna da esquerda com menu (Left Column with menu)  -->
+    <div class="s-left-column">
+      <nav class="navigator">
+        <div class="navigator__icon">
+          <a href="../../index.html">
+            <img id="spider-verse-icon" src="../../assets/images/icons/aranha1.png" width="100px" height="100px" />
+          </a>
+        </div>
+        <ul>
+          <li><a href="spiderman1.html">01</a></li>
+          <li><a href="#02" class="active">02</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- FIM - Coluna da esquerda com menu (Left Column with menu)  -->
+
+    <div class="s-main-content">
+      <div class="s-main-content__top">
+        <div class="s-logo">
+          <img src="../../assets/images/spider-verse/spider-verse-logo-02.png" alt="Spiderman 2 (2005)"
+            title="Spiderman 2 (2005)" width="600px" height="200px"/>
+        </div>
+
+        <div class="s-description">
+          <div class="pills">
+            <ul>
+              <li>Ano: 2023</li>
+              <li> Diretores: Bob Persichetti, Justin K. Thompson</li>
+            </ul>
+          </div>
+          <div class="s-description__text">
+            <p><strong>Sinopse:</strong>&nbsp;O filme basicamente conta a história de um novo homem-aranha, Miles Morales, um jovem negro e de descendência hispânica que mora no Brooklin em NY. Ao ser picado por uma aranha radioativa, ele passa por todas as dúvidas e inseguranças que seu antecessor Peter Parker viveu e que estamos cansados de saber.</p>
+          </div>
+        </div>
+
+        <div class="s-links">
+          <ul>
+            <li>
+              <a href="https://www.youtube.com/watch?v=frJyVXO1XWc" target="_blank" class="link-button">
+                <span class="icon">
+                  <div class="play-icon">&nbsp;</div>
+                </span>
+                <span class="label">
+                  Assistir trailer
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="s-main-content__bottom">
+        <div class="gallery">
+          <ul>
+            <li><a data-fancybox href="../../assets/images/spider-verse/logo-2.jpg" >
+              <img width="392px" height="225px" src="../../assets/images/spider-verse/logo-2.jpg" alt=""></a></li>
+            <li><a data-fancybox href="../../assets/images/spider-verse/spiderman-4.jpg" >
+              <img width="392px" height="225px" src="../../assets/images/spider-verse/spiderman-4.jpg" alt=""></a></li>
+            <li><a data-fancybox href="../../assets/images/spider-verse/image-05.webp"  >
+              <img width="392px" height="225px" src="../../assets/images/spider-verse/image-05.webp" alt=""></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script>
+    Fancybox.bind("[data-fancybox]", {
+    // Your custom options
+    });
+  </script>
+</body>
+</html>
