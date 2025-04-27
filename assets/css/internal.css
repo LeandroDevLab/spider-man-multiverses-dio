@@ -168,7 +168,7 @@ Apelando - importante é dar certo!
   display: flex;
   height: 100vh;
   flex-flow: row nowrap; 
-  background-color: aqua; 
+  background-color: var(--primary-color); 
 }
 
 .s-wrapper video{
